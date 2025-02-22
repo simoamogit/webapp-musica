@@ -10,9 +10,17 @@
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^4.21.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simoamogit/webapp-musica.git"
+  },
+  "bugs": {
+    "url": "https://github.com/simoamogit/webapp-musica/issues"
+  },
+  "homepage": "https://github.com/simoamogit/webapp-musica#readme",
+  "description": ""
 }
