@@ -16,11 +16,11 @@
     <p id="usb-status">USB non collegata.</p>
   </div>
   
-  <!-- Sezione YouTube (nasconde finché non si collega la USB) -->
+  <!-- Sezione YouTube (visibile solo se la USB è collegata) -->
   <div id="youtube-section" style="display:none;">
     <h2>Playlist YouTube più ascoltate</h2>
     <div id="playlist-container">
-      <!-- Le playlist saranno inserite qui -->
+      <!-- Le playlist verranno inserite qui -->
     </div>
   </div>
   
@@ -30,14 +30,6 @@
     <p id="download-status"></p>
     <button id="download-btn">Scarica Playlist in MP3</button>
     <p id="eta"></p>
-  </div>
-  
-  <!-- Sezione Media Player -->
-  <div id="player-section" style="display:none;">
-    <h2>Media Player</h2>
-    <button id="open-player">Apri Media Player</button>
-    <!-- Simulazione di un player con tag audio -->
-    <audio id="audio-player" controls style="display:none;"></audio>
   </div>
   
   <script src="script.js"></script>
