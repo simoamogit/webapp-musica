@@ -9,14 +9,14 @@
 <body>
   <h1>Music Downloader</h1>
   
-  <!-- Sezione USB -->
+  <!-- Sezione USB (qui usata per simulare la selezione della directory USB) -->
   <div id="usb-section">
-    <p>Verifica la connessione della USB:</p>
+    <p>Seleziona la cartella della USB (simulazione):</p>
     <button id="select-usb">Seleziona USB</button>
     <p id="usb-status">USB non collegata.</p>
   </div>
   
-  <!-- Sezione YouTube (visibile solo se la USB è collegata) -->
+  <!-- Sezione YouTube (visualizza playlist reali) -->
   <div id="youtube-section" style="display:none;">
     <h2>Playlist YouTube più ascoltate</h2>
     <div id="playlist-container">
@@ -30,8 +30,6 @@
     <p id="download-status"></p>
     <button id="download-btn">Scarica Playlist in MP3</button>
     <p id="eta"></p>
-    <!-- Pulsante per salvare il file, apparirà dopo il timer -->
-    <button id="save-file-btn" style="display:none;">Salva file sulla USB</button>
   </div>
   
   <script src="script.js"></script>
