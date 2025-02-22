@@ -1,10 +1,26 @@
 body {
     font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
     text-align: center;
-    margin: 50px;
-    background-color: #f4f4f4;
-}
-
-h1 {
-    color: #333;
-}
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  #playlist-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .playlist-item {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    width: 80%;
+    text-align: left;
+  }  

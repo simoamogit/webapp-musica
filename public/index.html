@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebApp Musica</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Downloader</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Benvenuto nella WebApp Musica 🎵</h1>
-    <p>Qui potrai gestire e scaricare le tue playlist preferite!</p>
-    <script src="script.js"></script>
+  <h1>Music Downloader</h1>
+  
+  <!-- Sezione USB -->
+  <div id="usb-section">
+    <p>Verifica la connessione della USB:</p>
+    <button id="select-usb">Seleziona USB</button>
+    <p id="usb-status">USB non collegata.</p>
+  </div>
+  
+  <!-- Sezione YouTube (nasconde finché non si collega la USB) -->
+  <div id="youtube-section" style="display:none;">
+    <h2>Playlist YouTube più ascoltate</h2>
+    <div id="playlist-container">
+      <!-- Le playlist saranno inserite qui -->
+    </div>
+  </div>
+  
+  <!-- Sezione Download -->
+  <div id="download-section" style="display:none;">
+    <h2>Download Playlist</h2>
+    <p id="download-status"></p>
+    <button id="download-btn">Scarica Playlist in MP3</button>
+    <p id="eta"></p>
+  </div>
+  
+  <!-- Sezione Media Player -->
+  <div id="player-section" style="display:none;">
+    <h2>Media Player</h2>
+    <button id="open-player">Apri Media Player</button>
+    <!-- Simulazione di un player con tag audio -->
+    <audio id="audio-player" controls style="display:none;"></audio>
+  </div>
+  
+  <script src="script.js"></script>
 </body>
 </html>
