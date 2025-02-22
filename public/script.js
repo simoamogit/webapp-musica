@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     // Step 2: Recupera le playlist reali da YouTube usando la Data API
     async function fetchPlaylists() {
-      const apiKey = "YOUR_API_KEY_HERE"; // Sostituisci con la tua API key
+      const apiKey = "AIzaSyBlqaZztfx0f0WH2NHZQ0Cyk3e5ULAAZR0"; // Sostituisci con la tua API key
       const query = "music playlist";
       const maxResults = 10;
       const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=playlist&maxResults=${maxResults}&q=${encodeURIComponent(query)}&key=${apiKey}`;
